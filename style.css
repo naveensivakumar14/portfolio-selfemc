@@ -162,7 +162,7 @@ body{
 }
 
 .skill-item img:hover{
-    scale: 1.2;
+    scale: 2;
 }
 .backend{
     display: grid;
