@@ -315,7 +315,7 @@ body{
     .About p{
         width: 90%;
         font-size: 13px;
-        text-align: left;
+        text-align: justify;
     }
     .About h4{
         margin: 5px 0;
