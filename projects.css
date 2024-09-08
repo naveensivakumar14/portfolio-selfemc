@@ -1,0 +1,230 @@
+/* Projects.html*/
+
+body {
+	/* background: linear-gradient(45deg, #190f2c, #200b30); */
+	font-family: "Gabarito", sans-serif;
+    background-color: #EEF7FF;
+	
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+/*-----------Navbar----------------*/
+
+
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;  
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #EEF7FF ;
+}
+
+.Nav_items{
+    list-style: none;
+    display: flex;
+    gap: 30px;    
+}
+.Nav_items li a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.Nav_items li a:hover{
+    background-color: #3B62FF;
+    color: white;
+    border-radius: 3px;
+}
+.toggle{
+ display: none;
+}
+
+/*-----------Porject Profile--------------*/
+
+.projects-s1{
+	background-color: #ddf3ff;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.projects-s1 h1{
+	color: #1d51ff ;
+	margin: 0;
+	padding: 0;
+}
+.projects-s1 p{
+	width: 60%;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.skill-icon{
+	padding: 25px 0px;
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.skill-icon > div{
+	height: auto;
+	width: 80px;
+}
+.skill-icon div img{
+	width: 100%;
+}
+
+/*---------------- Main CSS------------ */
+.grid-container{
+	background: linear-gradient(45deg, #190f2c, #200b30);
+	padding: 20px;
+}
+.grid-wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grid-wrapper > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+.grid-wrapper > div > img:hover{
+	opacity: 0.7;
+}
+
+.grid-wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+	position: relative;
+}
+.grid-wrapper .wide {
+	grid-column: span 2;
+}
+.grid-wrapper .tall {
+	grid-row: span 2;
+}
+.grid-wrapper .big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.grid-content{
+	color: white;
+	position: absolute;
+	opacity: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.grid-content:hover{
+	opacity: 1;
+	transition: 0.6s;
+}
+
+.grid-content button{
+	padding: 10px 15px;
+	background-color: #1E201E;
+	color: white ;
+	border: none;
+	border-radius: 3px;
+	font-weight: bold;
+}
+.grid-content button a{
+	text-decoration: none;
+	color: white;
+	
+
+}
+
+
+
+/*Responsive*/
+
+@media screen and (max-width: 800px){
+
+	.grid{
+		display: flex;
+		justify-content: center;
+	}
+	.grid-wrapper .weatherImg{
+		grid-row: span 2;
+	}
+
+	.projects-s1{
+		height: 60vh;
+	}
+	.projects-s1 p{
+		padding: 20px 0px;
+		width: 90%;
+		font-size: 14px;
+	}
+	.projects-s1 h2{
+		font-size: 16px;
+	}
+	.projects-s1 h1{
+		font-size: 25px;
+	}
+
+
+	.skill-icon{
+		padding: 20px 0px;
+		display: flex;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+	.skill-icon > div{
+		height: auto;
+		width: 40px;
+	}
+
+}
+
+
+
+@media screen and (max-width:600px){
+
+	
+
+	
+	.grid-container{
+
+		height: auto;
+		width: 300px;
+		padding: 20px;
+		margin: 20px 0px;
+	}
+	.grid-wrapper{
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		grid-auto-rows: 150px;
+		grid-auto-flow: dense;
+	}
+	.grid-wrapper .wide {
+		grid-column: span 1;
+	}
+	.grid-wrapper .weatherImg{
+		grid-row: span 1;
+	}
+
+	.skill-icon > div{
+		height: auto;
+		width: 35px;
+	}
+	
+}
