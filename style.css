@@ -161,11 +161,7 @@ body{
     width: 100%;
 }
 
-<<<<<<< HEAD
 .skill-item:hover{
-=======
-.skill-item img:hover{
->>>>>>> 743dfda58a97873f3dbdd8c7f2ca8993b98820a3
     scale: 1.5;
 }
 .backend{
